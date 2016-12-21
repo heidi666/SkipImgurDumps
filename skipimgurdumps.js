@@ -23,4 +23,12 @@ $(".navNext").click(function() {
   setTimeout(checkDump, 500);
 });
 
+function keyboardHandler(event) {
+  if (event.which == 39) {
+    setTimeout(checkDump, 500);
+  }
+}
+
+$(window).keydown(keyboardHandler);
+
 checkDump();
