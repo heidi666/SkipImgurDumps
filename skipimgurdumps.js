@@ -15,10 +15,7 @@ var re = new RegExp(/dump/i);
 function checkDump() {
   title = $("h1")[0].innerText;
   if (re.test(title)) {
-   stub = window.location.href.slice(25)
-   foundin = $("#item-"+stub).get(0);
-   blah = $(foundin).next().get(0);
-   window.location.href = blah.href.replace(/\/a\//, "/gallery/")
+    $('.navNext').click();
   }
 }
 
